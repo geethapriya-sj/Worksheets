@@ -1,0 +1,73 @@
+1. B. Struct
+2. A. __init__
+3. A. in
+4. A. LEft to Right
+5. C. iv-iii-ii-i
+6. C. 0.3333
+7. A. X**4**4
+8. B. str
+
+
+9. A ,D
+10. C, 
+
+11. List is a collection which is ordered and changeable. Allows duplicate members. e.g [1,4,5,6]
+	Tuple is a collection which is ordered and unchangeable. Allows duplicate members. e.g., (12,4,5)
+	Set is a collection which is unordered and unindexed. No duplicate members. e.g., {"Apple","banana","grapes"}
+	Dictionary is a collection which is unordered, changeable and indexed. No duplicate members. e.g., {"brand":"tokyo" , "year":"2003"}
+	
+12.  String is immutable.
+     my_Str = "I+Love+Python"
+     replaced_String = str.replace(my_Str,"+"," ")
+	 
+13. The ord() function in Python accepts a string of length 1 as an argument and returns the unicode code point 
+    representation of the passed argument. For example ord('B') returns 66 which is a unicode code point value of character 'B'.
+	
+	
+14. def ValidateUserInput(a,b,c):
+    try:
+        try:
+            if float(a) == 0:
+                print('a must not be zero')
+            else:
+                a=float(a)
+        except:
+            print('invalid input a')
+        try:
+            b=float(b)
+        except:
+            print('invalid user input b')
+        try:
+            c=float(c)
+            return a,b,c
+        except:
+            print('invalid user input c')
+    except:
+        return 'error'
+		
+		
+	import cmath
+	a = input('Enter the value for a')
+	b = input('Enter the value for b')
+	c = input('Enter the value for c')
+
+	a,b,c = ValidateUserInput(a,b,c)
+
+	try:
+		d = (b**2) - (4*a*c)
+		quada_x_neg = (-b-cmath.sqrt(d))/(2*a)
+		quada_x_pos = (-b+cmath.sqrt(d))/(2*a)
+		print('the value for x are {0} {1}'.format(quada_x_neg,quada_x_pos))
+	except:
+		print('Computation error')
+	
+15. n = input('enter Value for n')
+try:
+    if(float(n) < 0):
+        print('Enter postive number')
+    else:
+        n=float(n)
+        res = n*(n+1)/2
+        print('The sum of {0} natural number is {1}:'.format(n,res))
+except:
+    print('invalid number')
