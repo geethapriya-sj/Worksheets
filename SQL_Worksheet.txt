@@ -1,0 +1,37 @@
+1. A, D
+2. A,B,C
+
+
+3. B
+4. B
+5. A
+6. C
+7. B
+8. B
+9. B
+10. A
+
+
+11. A data warehouse is a large collection of business data used to help an organization make decisions
+ a data warehouse periodically pulls data from the apps and systems; then, the data goes through formatting and 
+ import processes to match the data already in the warehouse. The data warehouse stores this processed data so it’s ready for decision makers to access. 
+ How frequently data pulls occur, or how data is formatted, etc., will vary depending on the needs of the organization.
+ 
+ 
+ 12. An OLTP system captures and maintains transaction data in a database. Each transaction involves individual database
+ records made up of multiple fields or columns. Examples include banking and credit card activity or retail checkout scanning.
+ 
+ OLAP applies complex queries to large amounts of historical data, aggregated from OLTP databases and other sources, for data mining, analytics, 
+ and business intelligence projects. In OLAP, the emphasis is on response time to these complex queries.
+ 
+ 13. Integrated: The way data is extracted and transformed is uniform, regardless of the original source.
+    Time-variant: Data is organized via time-periods (weekly, monthly, annually, etc.).
+     Non-volatile: A data warehouse is not updated in real-time. It is periodically updated via the uploading of data, protecting it from the influence of momentary change.
+	 
+	 
+14. The star schema is an important special case of the snowflake schema, and is more effective for handling simpler queries. 
+The star schema gets its name from the physical model's resemblance to a 
+star shape with a fact table at its center and the dimension tables surrounding it representing the star's points.
+
+
+15. No idea about it
