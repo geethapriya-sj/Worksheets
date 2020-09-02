@@ -1,0 +1,44 @@
+1. C
+2. B
+3. C.
+4. B
+5. B
+
+6. A,D
+7. B, C
+8. A,C
+9. B,A
+
+10. The adjusted R2 will penalize you for adding independent variables (K in the equation) that do not fit the model.
+In regression analysis, it can be tempting to add more variables to the data as you think of them. Some of those variables will be significant, 
+but you can’t be sure that significance is just by chance. The adjusted R2 will compensate for this by that penalizing you for those extra variables.
+
+While values are usually positive, they can be negative as well. This could happen if your R2 is zero; 
+After the adjustment, the value can dip below zero. This usually indicates that your model is a poor fit for your data. 
+Other problems with your model can also cause sub-zero values, such as not putting a constant term in your model. 
+
+11. A regression model that uses L1 regularization technique is called Lasso Regression and model which uses L2 is called Ridge Regression.
+The key difference between these two is the penalty term.
+
+Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function
+
+Lasso Regression adds “absolute value of magnitude” of coefficient as penalty term to the loss function.
+The key difference between these techniques is that Lasso shrinks the less important feature’s coefficient to zero thus,
+removing some feature altogether. So, this works well 
+for feature selection in case we have a huge number of features.
+
+13. We need to scale the data , so the all the values in the dataset will be scaled in same range and it will oavif giving more weightage to
+the features having more mangnitude.
+
+14. r-square, adjusted r2, Root Mean Squared Error, Mean Absolute Error ,Mean Absolute Error
+
+15.  p   N
+
+P   1000  50
+
+N   250   1200
+
+Accuracy = TP + TN/(TP+TN+FN+FP)  2200/2500 = 0.88
+sensitivity/Recall = TP/(TP+FN) = 1000/1050  = 0.95
+Specificity = TN/(TN+FP) = 1200/1450 = 0.82
+PRecision = TP/(TP+FP) = 1000/1250 = 0.8
